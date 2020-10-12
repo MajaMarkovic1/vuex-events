@@ -38,6 +38,7 @@ export default {
   props: ['id'],
   created() {
     this.$store.dispatch('event/fetchEvent', this.id)
+    console.log(this.id)
   },
   computed: {
     ...mapState({
